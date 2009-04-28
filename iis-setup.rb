@@ -63,23 +63,22 @@ class IISSetup
   end
 end
 
+require 'mscorlib'
+require 'system'
+require 'System.Data'
+require 'System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'
+require 'System.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+require 'System.DirectoryServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
 
-  require 'mscorlib'
-  require 'system'
-  require 'System.Data'
-  require 'System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'
-  require 'System.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
-  require 'System.DirectoryServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+include System
+include System::DirectoryServices
+include System::IO
+include System::Collections
 
-  include System
-  include System::DirectoryServices
-  include System::IO
-  include System::Collections
+ROOT = "IIS://localhost/W3SVC/1/root"
 
-  ROOT = "IIS://localhost/W3SVC/1/root"
-
-  # Is IIS installed?
-  raise "Please make sure IIS is installed on this machine." unless DirectoryEntry.exists ROOT
+# Is IIS installed?
+raise "Please make sure IIS is installed on this machine." unless DirectoryEntry.exists ROOT
 
 def run
   app_name = ARGV[0].to_clr_string rescue(raise(Exception.new("Application name required as first command-line arg")))
