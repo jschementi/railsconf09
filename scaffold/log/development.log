@@ -1,0 +1,363 @@
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-04-30 23:52:21) [GET]
+Completed in 2617ms (View: 303, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+Migrating to CreatePosts (20090501065355)
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-04-30 23:57:53) [GET]
+Completed in 893ms (View: 137, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-04-30 23:58:26) [GET]
+Completed in 106ms (View: 88, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-04-30 23:58:44) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 1329ms (View: 890, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-04-30 23:58:57) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 967ms (View: 582, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 00:00:27) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 765ms (View: 216, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-05-01 00:00:36) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 826ms (View: 443, DB: 0) | 200 OK [http://localhost/posts/new]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 00:13:57) [GET]
+Completed in 955ms (View: 150, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 00:14:02) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 1406ms (View: 998, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-05-01 00:14:08) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 911ms (View: 568, DB: 0) | 200 OK [http://localhost/posts/new]
+WARNING: Can't mass-assign these protected attributes: id
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 02:32:01) [GET]
+Completed in 906ms (View: 136, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 02:32:10) [GET]
+Completed in 120ms (View: 103, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 02:32:16) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 1104ms (View: 715, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 02:32:27) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 480ms (View: 183, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 02:32:34) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 574ms (View: 195, DB: 0) | 200 OK [http://localhost/posts]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 03:06:19) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 1930ms (View: 1487, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-05-01 03:06:26) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 734ms (View: 362, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 03:06:31) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 876ms (View: 496, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-05-01 03:06:38) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 954ms (View: 587, DB: 0) | 200 OK [http://localhost/posts/1/edit]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 03:20:21) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 1196ms (View: 752, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-05-01 03:20:28) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 930ms (View: 546, DB: 0) | 200 OK [http://localhost/posts/new]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 03:29:30) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 1572ms (View: 1132, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-05-01 03:29:36) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 757ms (View: 382, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-05-01 03:29:52) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 1090ms (View: 676, DB: 0) | 200 OK [http://localhost/posts/1/edit]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-05-01 03:30:29) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 978ms (View: 495, DB: 0) | 200 OK [http://localhost/posts/1/edit]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 03:46:44) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 21285ms (View: 15946, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 03:48:59) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 4723ms (View: 3410, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-05-01 03:49:53) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 12553ms (View: 5954, DB: 0) | 200 OK [http://localhost/posts/1/edit]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-05-01 04:05:39) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 10029ms (View: 6665, DB: 0) | 200 OK [http://localhost/posts/new]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 08:37:01) [GET]
+Completed in 2360ms (View: 252, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 08:37:16) [GET]
+Completed in 156ms (View: 131, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 08:37:30) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 3720ms (View: 2950, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-05-01 08:40:37) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 1113ms (View: 503, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 08:40:41) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 1143ms (View: 635, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-05-01 08:40:47) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 634ms (View: 240, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 08:40:51) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 615ms (View: 302, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-05-01 08:40:54) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 889ms (View: 478, DB: 0) | 200 OK [http://localhost/posts/1/edit]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 08:40:58) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 672ms (View: 329, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 08:41:12) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 595ms (View: 286, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 08:42:49) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 649ms (View: 361, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 08:43:25) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 679ms (View: 343, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-05-01 08:43:30) [GET]
+  Parameters: {"id"=>"3"}
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 576ms (View: 191, DB: 0) | 200 OK [http://localhost/posts/3]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-05-01 08:43:35) [GET]
+  Parameters: {"id"=>"3"}
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 684ms (View: 363, DB: 0) | 200 OK [http://localhost/posts/3/edit]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 08:43:38) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 922ms (View: 450, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 08:43:58) [GET]
+Completed in 201ms (View: 164, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 09:06:20) [GET]
+Completed in 97ms (View: 83, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 09:06:27) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 692ms (View: 353, DB: 0) | 200 OK [http://localhost/posts]
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 13:33:37) [GET]
+Completed in 2857ms (View: 160, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 13:33:45) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 3475ms (View: 2800, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 13:45:03) [GET]
+Completed in 139ms (View: 108, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 14:01:59) [GET]
+Completed in 108ms (View: 84, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 14:02:06) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 1749ms (View: 1341, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 14:10:24) [GET]
+Completed in 74ms (View: 62, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-01 14:10:28) [GET]
+Completed in 73ms (View: 60, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 14:11:53) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 1049ms (View: 581, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-05-01 14:12:04) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 764ms (View: 335, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-05-01 14:12:08) [GET]
+  Parameters: {"id"=>"2"}
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 818ms (View: 474, DB: 0) | 200 OK [http://localhost/posts/2/edit]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-01 14:12:50) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 638ms (View: 335, DB: 0) | 200 OK [http://localhost/posts]
