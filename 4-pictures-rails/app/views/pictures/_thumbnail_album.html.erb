@@ -1,0 +1,11 @@
+<div class="thumbnail_album">
+  <%= link_to image_tag(serve_thumbnail_picture_url(album.pictures.first), :alt => album.name, :width => 96, :height => 71), album_url(album)  %>
+  <!--
+  <div class="comments">
+    <%= link_to album.person.name, person_pictures_url(album.person) %>
+  </div>
+  <div class='album_info'>
+    <%= link_to album.name, album_url(album) %><br>
+  </div>
+  -->
+</div>

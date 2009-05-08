@@ -1,0 +1,14 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+simple:
+  first_name: Simple
+  last_name: Guy
+  password: <%= Digest::SHA1.hexdigest("MyString" + "secret") %>
+  email: person@example.org
+  salt: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  password: MyString
+  salt: MyString

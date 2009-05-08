@@ -1,0 +1,5 @@
+<div class='tag_cloud'>
+  <% @tags.each do |tag| %>
+    <span><%= link_to tag.name, tagged_pictures_path(:tag => tag.name) %></span>
+  <% end %>
+</div>

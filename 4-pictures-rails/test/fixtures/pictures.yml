@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  person_id: 1
+  mime_type: MyString
+
+two:
+  title: MyString
+  person_id: 1
+  mime_type: MyString

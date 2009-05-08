@@ -1,0 +1,5 @@
+<% form_for @comment, :url => picture_comments_url  do |f| %>
+  <%= f.hidden_field :picture_id%>
+  <%= f.text_area :body %>
+  <%= submit_tag "Submit" %>
+<% end %>	

@@ -1,0 +1,47 @@
+<h2><%= picture.title %></h2>
+
+<div class="picture">
+
+  <div class="credits">
+    by <%= link_to picture.person.name, person_pictures_url(picture.person) %>
+    <% if picture.album %>
+      (part of the <%= link_to picture.album.name, album_url(picture.album) %> album)
+    <% end %>
+  </div>
+
+  <div class="resizing_controls">
+    <a href="javascript:switchPictureResolution('small');" onclick="">Small (320x240)</a> | 
+    <a href="javascript:switchPictureResolution('medium');" onclick="">Medium (640x480)</a> | 
+    <a href="javascript:switchPictureResolution('full');" onclick="">Original</a>
+  </div>
+
+  <%= image_tag serve_picture_url(picture), :alt => picture.title, :class => 'picture_medium', :id => 'picture' %>
+
+  <% unless picture.tags.blank? %>
+    <h3>Tags: <%= picture.tags.collect {|tag| link_to tag.name, tagged_pictures_path(:tag => tag.name)}.join(", ") %></h3>
+  <% end %>
+
+  <div class="tagging">
+    <% form_tag picture_taggings_path(picture) do %>
+      <% if current_person %>
+        <%= text_field_tag :name %><%=submit_tag "Tag it!"%>
+        <%= hidden_field_tag :person_id, current_person.id %>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class='picture_comments'>
+  	<div id="comment_for-<%= picture.id %>" style='display:none;'>
+  		<% comment = Comment.new(:picture => picture)%>
+  		<% form_for comment, :url => picture_comments_url(picture)  do |f| %>
+  		  <%= f.hidden_field :picture_id %>
+  		  <%= f.text_area :body, :rows => 5 %>
+  		  <%= submit_tag "Submit" %>
+  		<% end %>
+  	</div>
+  	<%= link_to_function "Add a comment", "Element.show('comment_for-#{picture.id}'); Element.hide('comment_link_for-#{picture.id}')", :id => "comment_link_for-#{picture.id}" %>	
+  	<%#= link_to "Add a comment", new_picture_comment_url(picture) %>
+  	<%= render :partial => 'comments/comment', :collection => picture.comments %>
+  </div>
+  
+</div>

@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <%= stylesheet_link_tag 'dark' %>
+  <%= javascript_include_tag :defaults %>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+      Pictures
+  </title>
+
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+	    <h1>Pictures</h1>
+      <div class="height123">
+        <div class="login_top_bar">
+          <% if current_person %>
+            <%= current_person.name %> <%= link_to "logout", session_url, :method => :delete %>
+          <% else %>
+            <% form_tag session_url do  %>
+              <div class="right"><label for='email'>email</label> <%= text_field_tag :email, nil, :size => 15 %></div>
+              <div class="clear"></div>
+              <div class="right"><label for='password'>password</label> <%= password_field_tag :password, nil, :size => 15 %></div>
+              <div class="clear"></div>
+              <div class="right"><%= submit_tag "login"%></div>
+              <div class="clear"></div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+      <div class="right marginright40">
+        <div class="sub_nav_button">
+          <%= link_to 'home', root_path %>
+        </div>
+        <div class="sub_nav_button_outer">
+        </div>
+      </div>
+
+      <% if current_person %>
+
+      <div class="right">
+        <div class="sub_nav_button">
+          <%= link_to 'upload', new_picture_path %>
+        </div>
+        <div class="sub_nav_button_outer">
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="sub_nav_button">
+          <%= link_to 'add an album', new_album_path %>
+        </div>
+        <div class="sub_nav_button_outer">
+        </div>
+      </div>
+      
+      <% end %>
+
+      <div class="clear"></div>
+    </div>
+    
+    <% if flash[:error] %>
+  	  <h2 style='color:red;margin-left:40px;'> <%= flash[:error] %></h2>
+  	<% end %>
+    <% if flash[:notice] %>
+      <h2 style='color:green;margin-left:40px;'> <%= flash[:notice] %></h2>
+    <% end %>
+    
+    <div id="content">
+        <%= yield %>
+    </div>
+    <div id="footer">&copy; Microsoft Corporation</div>
+  </div>
+</body>
+</html>

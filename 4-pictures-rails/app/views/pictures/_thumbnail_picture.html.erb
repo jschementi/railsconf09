@@ -1,0 +1,10 @@
+<%# require 'ruby-debug'; debugger%>
+<% width ||= 96 %>
+<% height ||= 96 %>
+<% thumbnail ||= :true %>
+<div class="thumbnail_picture image_hover">
+  <%= link_to image_tag(thumbnail == :true ? serve_thumbnail_picture_url(picture) : serve_picture_url(picture), :alt => picture.title, :width => width, :height => height), person_picture_url(picture.person, picture), :style => "height: #{height}px", :onmouseover => "onImageMouseOver(this)", :onmouseout => "onImageMouseOut(this)" %>
+  <div class='comments popup' style="display: none" onmouseover="onPopupMouseOver(this)" onmouseout="onPopupMouseOut(this)">
+    <%= link_to picture.person.name, person_pictures_url(picture.person) %>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<h2><%= @album.name %> Photo Album</h2>
+<div>
+  by <%= link_to @album.person.name, person_url(@album.person) %>
+</div>
+<% if @album.pictures.blank? %>
+  <p class='empty'>There are no pictures in this album.</p>
+<% else %>
+  <%= @album.pictures.count %> pictures in this album.</p>
+  <table><tr>
+  <% @album.pictures.each_with_index do |picture, index| %>
+    <%= "</tr><tr>" if index > 1 && index % 6 == 0 %>
+    <td><%= render :partial => 'pictures/thumbnail_picture', :locals => {:picture => picture} %></td>
+  <% end %>
+  <tr></table>
+<% end %>
+<p class='add'><%= link_to "Add a Picture", new_album_picture_path(@album) %></p>
