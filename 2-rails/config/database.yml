@@ -1,0 +1,17 @@
+development:
+  adapter: mssql
+  host: JIMMYSCH-GEMINI\SQLEXPRESS
+  database: ironruby_rails_dev
+  integrated_security: true
+
+test:
+  adapter: mssql
+  host: JIMMYSCH-GEMINI\SQLEXPRESS
+  database: ironruby_rails_test
+  integrated_security: true
+
+production:
+  adapter: mssql
+  host: JIMMYSCH-GEMINI\SQLEXPRESS
+  database: ironruby_rails_prod
+  integrated_security: true

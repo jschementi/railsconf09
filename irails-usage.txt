@@ -1,0 +1,224 @@
+c:\dev\railsconf09>irails foo
+      create
+      create  app/controllers
+      create  app/helpers
+      create  app/models
+      create  app/views/layouts
+      create  config/environments
+      create  config/initializers
+      create  config/locales
+      create  db
+      create  doc
+      create  lib
+      create  lib/tasks
+      create  log
+      create  public/images
+      create  public/javascripts
+      create  public/stylesheets
+      create  script/performance
+      create  test/fixtures
+      create  test/functional
+      create  test/integration
+      create  test/performance
+      create  test/unit
+      create  vendor
+      create  vendor/plugins
+      create  tmp/sessions
+      create  tmp/sockets
+      create  tmp/cache
+      create  tmp/pids
+      create  Rakefile
+      create  README
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  config/database.yml
+      create  config/routes.rb
+      create  config/locales/en.yml
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_rails_defaults.rb
+      create  config/initializers/session_store.rb
+      create  config/environment.rb
+      create  config/boot.rb
+      create  config/environments/production.rb
+      create  config/environments/development.rb
+      create  config/environments/test.rb
+      create  script/about
+      create  script/console
+      create  script/dbconsole
+      create  script/destroy
+      create  script/generate
+      create  script/runner
+      create  script/server
+      create  script/plugin
+      create  script/performance/benchmarker
+      create  script/performance/profiler
+      create  test/test_helper.rb
+      create  test/performance/browsing_test.rb
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/index.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  public/images/rails.png
+      create  public/javascripts/prototype.js
+      create  public/javascripts/effects.js
+      create  public/javascripts/dragdrop.js
+      create  public/javascripts/controls.js
+      create  public/javascripts/application.js
+      create  doc/README_FOR_APP
+      create  log/server.log
+      create  log/production.log
+      create  log/development.log
+      create  log/test.log
+
+> ir script\generate scaffold post title:string body:text published:boolean
+      create  app/models/
+      exists  app/controllers/
+      exists  app/helpers/
+      create  app/views/posts
+      exists  app/views/layouts/
+      exists  test/functional/
+      create  test/unit/
+      create  test/unit/helpers/
+      exists  public/stylesheets/
+      create  app/views/posts/index.html.erb
+      create  app/views/posts/show.html.erb
+      create  app/views/posts/new.html.erb
+      create  app/views/posts/edit.html.erb
+      create  app/views/layouts/posts.html.erb
+      create  public/stylesheets/scaffold.css
+      create  app/controllers/posts_controller.rb
+      create  test/functional/posts_controller_test.rb
+      create  app/helpers/posts_helper.rb
+      create  test/unit/helpers/posts_helper_test.rb
+       route  map.resources :posts
+  dependency  model
+      exists    app/models/
+      exists    test/unit/
+      create    test/fixtures/
+      create    app/models/post.rb
+      create    test/unit/post_test.rb
+      create    test/fixtures/posts.yml
+      exists    db/migrate
+      create    db/migrate/20090422182202_create_posts.rb
+
+> irake db:migrate
+(in c:/dev/IronRubyOnRails)
+==  CreatePosts: migrating ====================================================
+-- create_table(:posts)
+   -> 0.2490s
+   -> -1 rows
+==  CreatePosts: migrated (0.3150s) ===========================================
+
+c:\dev\railsconf09\pictures>irake db:migrate
+(in c:/dev/railsconf09/pictures)
+==  CreatePictures: migrating =================================================
+-- create_table(:pictures)
+   -> 0.1260s
+   -> -1 rows
+==  CreatePictures: migrated (0.1780s) ========================================
+
+==  CreatePeople: migrating ===================================================
+-- create_table(:people)
+   -> 0.0640s
+   -> -1 rows
+==  CreatePeople: migrated (0.0870s) ==========================================
+
+==  CreateTags: migrating =====================================================
+-- create_table(:tags)
+   -> 0.0380s
+   -> -1 rows
+==  CreateTags: migrated (0.0550s) ============================================
+
+==  CreateTaggings: migrating =================================================
+-- create_table(:taggings)
+   -> 0.0470s
+   -> -1 rows
+==  CreateTaggings: migrated (0.0570s) ========================================
+
+==  CreateFriendships: migrating ==============================================
+-- create_table(:friendships)
+   -> 0.0530s
+   -> -1 rows
+==  CreateFriendships: migrated (0.0650s) =====================================
+
+==  AddEmailToPeople: migrating ===============================================
+-- add_column(:people, :email, :string)
+   -> 0.0170s
+   -> -1 rows
+==  AddEmailToPeople: migrated (0.0290s) ======================================
+
+==  RenameFriendships: migrating ==============================================
+-- rename_table(:friendships, :follows)
+   -> 0.0110s
+   -> -1 rows
+==  RenameFriendships: migrated (0.0210s) =====================================
+
+==  AddDataToPictures: migrating ==============================================
+-- add_column(:pictures, :data, :binary)
+   -> 0.0060s
+   -> -1 rows
+==  AddDataToPictures: migrated (0.0160s) =====================================
+
+==  AddFilenameToPictures: migrating ==========================================
+-- add_column(:pictures, :filename, :string)
+   -> 0.0080s
+   -> -1 rows
+==  AddFilenameToPictures: migrated (0.0180s) =================================
+
+==  MungeFollowsColumns: migrating ============================================
+-- rename_column(:follows, :friend_id, :following_id)
+   -> 0.0070s
+   -> -1 rows
+-- rename_column(:follows, :originator_id, :follower_id)
+   -> 0.0040s
+   -> -1 rows
+==  MungeFollowsColumns: migrated (0.0240s) ===================================
+
+==  CreateComments: migrating =================================================
+-- create_table(:comments)
+   -> 0.0160s
+   -> -1 rows
+==  CreateComments: migrated (0.0270s) ========================================
+
+==  CreateAlbums: migrating ===================================================
+-- create_table(:albums)
+   -> 0.0190s
+   -> -1 rows
+==  CreateAlbums: migrated (0.0300s) ==========================================
+
+==  AddAlbumIdToPictures: migrating ===========================================
+-- add_column(:pictures, :album_id, :integer)
+   -> 0.0060s
+   -> -1 rows
+==  AddAlbumIdToPictures: migrated (0.0190s) ==================================
+
+==  AddPersonIdToTaggings: migrating ==========================================
+-- add_column(:taggings, :person_id, :integer)
+   -> 0.0040s
+   -> -1 rows
+==  AddPersonIdToTaggings: migrated (0.0150s) =================================
+
+==  AddThumbnailDataToPictures: migrating =====================================
+-- add_column(:pictures, :thumbnail_data, :binary)
+   -> 0.0050s
+   -> -1 rows
+==  AddThumbnailDataToPictures: migrated (0.0160s) ============================
+
+> cd IronRubyOnRails
+> ir script\server
+=> Booting WEBrick
+=> Rails 2.3.2 application starting on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2009-04-22 13:55:50] INFO  WEBrick 1.3.1
+[2009-04-22 13:55:50] INFO  ruby 1.8.6 (2008-05-28) [i386-mswin32]
+[2009-04-22 13:55:50] INFO  WEBrick::HTTPServer#start: pid=2928 port=3000
+
+> ir script\console
+Loading development environment (Rails 2.3.2)
+>> Post.find_by_title("foo")
+=> #<Post id: 1, title: "foo", body: "bar">

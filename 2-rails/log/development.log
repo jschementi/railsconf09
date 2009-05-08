@@ -1,0 +1,74 @@
+# Logfile created on Thu May 07 12:19:24 -07:00 2009/!\ FAILSAFE /!\  Thu May 07 12:22:37 -07:00 2009
+  Status: 500 Internal Server Error
+  Cannot open database "ironruby_rails_dev" requested by the login. The login failed.
+Login failed for user 'REDMOND\jimmysch'.
+    System.Data:0:in `OnError'
+    System.Data:0:in `ThrowExceptionAndWarning'
+    System.Data:0:in `Run'
+    System.Data:0:in `CompleteLogin'
+    System.Data:0:in `AttemptOneLogin'
+    System.Data:0:in `LoginNoFailover'
+    System.Data:0:in `OpenLoginEnlist'
+    System.Data:0:in `.ctor'
+    System.Data:0:in `CreateConnection'
+    System.Data:0:in `CreatePooledConnection'
+    System.Data:0:in `CreateObject'
+    System.Data:0:in `UserCreateRequest'
+    System.Data:0:in `GetConnection'
+    System.Data:0:in `GetConnection'
+    System.Data:0:in `OpenConnection'
+    System.Data:0:in `Open'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mssql_adapter.rb:383:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mssql_adapter.rb:54:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mssql_adapter.rb:33:in `mssql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    :0:in `__send__'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:185:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    :0:in `loop'
+    c:/ruby/lib/ruby/1.8/monitor.rb:242:in `mon_synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:6:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    :0:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    static.rb:13:in `call'
+    urlmap.rb:40:in `call'
+    :0:in `each'
+    urlmap.rb:36:in `call'
+    log_tailer.rb:15:in `call'
+    content_length.rb:12:in `call'
+    webrick.rb:25:in `service'
+    httpserver.rb:89:in `service'
+    httpserver.rb:43:in `run'
+    server.rb:162:in `start_thread'
+    c:\dev\ironruby\Merlin\Main\Languages\Ruby\Libraries.LCA_RESTRICTED\Builtins\ThreadOps.cs:640:in `RubyThreadStart'
+    c:\dev\ironruby\Merlin\Main\Languages\Ruby\Libraries.LCA_RESTRICTED\Builtins\ThreadOps.cs:621:in `<CreateThread>b__0'
+    mscorlib:0:in `ThreadStart_Context'
+    mscorlib:0:in `Run'
+    mscorlib:0:in `ThreadStart'
+
+
+Processing SayController#index (for 127.0.0.1 at 2009-05-07 12:27:07) [GET]
+Completed in 435ms (View: 302, DB: 0) | 200 OK [http://localhost/say]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-05-07 12:28:29) [GET]
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 2659ms (View: 2127, DB: 0) | 200 OK [http://localhost/posts]

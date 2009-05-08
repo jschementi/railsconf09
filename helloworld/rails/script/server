@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby
-
-$start_time = Time.now
-puts "Perf: server starting #{$start_time}"
-
-require File.dirname(__FILE__) + '/../config/boot'
-require 'commands/server'
