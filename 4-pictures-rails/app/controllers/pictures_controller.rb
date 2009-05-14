@@ -4,7 +4,7 @@ class PicturesController < ApplicationController
   
   def index
     filtered_pictures(:limit => 13)
-    filtered_albums(:limit => 5)
+    filtered_albums(:limit => 7)
     respond_to do |format|
       format.html
       format.js { render :json => @pictures }
@@ -15,7 +15,7 @@ class PicturesController < ApplicationController
   def mine
     params[:person_id] = current_person.id
     @pictures = filtered_pictures(:limit => 13)
-    @albums   = filtered_albums(:limit => 5)
+    @albums   = filtered_albums(:limit => 7)
     respond_to do |format|
       format.html { render :action => 'index' }
       format.js { render :json => @pictures }
@@ -42,7 +42,7 @@ class PicturesController < ApplicationController
     respond_to do |format|
       format.html
       format.js { render :json => @picture }
-      format.xml { render :xml => @picture }    
+      format.xml { render :xml => @picture }
     end
   end
   

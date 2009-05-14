@@ -45,7 +45,7 @@ html body span.clear
 
 div#container {
   background-color: #222;
-  width: 904px;
+  width: 974px;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -188,6 +188,7 @@ div#content div#recent_pictures {
 }
 div#content div#recent_albums {
   margin: 15px;
+  text-align: center;
 }
 
 div#content table tr td {
@@ -293,11 +294,11 @@ div#content img#picture {
 
 img.picture_small {
   width: 320px;
-  height: 240px;
+  height: 213px;
 }
 img.picture_medium {
   width: 640px;
-  height: 480px;
+  height: 426px;
 }
 img.picture_full {
 }

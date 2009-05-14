@@ -27,7 +27,7 @@ class MyForm < Form # System::Windows::Forms
 
       # Make sure all fields are loaded by calling
       # one field on each record
-      Person.all.each{|pe| pe.age }
+      Person.all.each{|pe| pe.first_name }
 
       Person.all.each do |pe|
         @customer_list.add pe

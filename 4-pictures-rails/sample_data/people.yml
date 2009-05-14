@@ -15,3 +15,11 @@ ed:
   email: ed@example.org
   password: <%= Digest::SHA1.hexdigest("MyString" + "secret") %>
   salt: MyString
+  
+jimmy:
+  id: 3
+  first_name: Jimmy
+  last_name: Schementi
+  email: jschementi@gmail.com
+  password: <%= Digest::SHA1.hexdigest("MyString" + "jimmysch") %>
+  salt: MyString

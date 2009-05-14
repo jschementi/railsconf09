@@ -2,30 +2,40 @@
 
 fall:
   id: 1
-  name: Fall
+  name: 1-Fall
   person_id: 1
 
 germany:
-  id: 2    
-  name: Germany
+  id: 2
+  name: 2-Germany
   person_id: 1
 
 japan:
-  id: 3    
-  name: Japan
+  id: 3
+  name: 3-Japan
   person_id: 1
 
 scenery:
-  id: 4    
-  name: Scenary
+  id: 4
+  name: 4-Scenary
   person_id: 2
-  
+
 spring:
-  id: 5    
-  name: Spring
+  id: 5
+  name: 5-Spring
   person_id: 2
-  
+
 washington_dc:
-  id: 6    
-  name: Washington DC
+  id: 6
+  name: 6-Washington DC
   person_id: 2
+
+railsconf09:
+  id: 7
+  name: 7-RailsConf 2009
+  person_id: 3
+
+lasvegas:
+  id: 8
+  name: 8-Las Vegas
+  person_id: 3
