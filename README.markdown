@@ -23,7 +23,8 @@ jschementi's RailsConf 2009 Talk Material
 -- a rack application running in IIS.
 
 - 6-resizer
--- ironruby resizing a jpg using .NET
+-- ironruby resizing a jpg using .NET (used by 4-pictures-rails to resize 
+   thumbnails (see lib/tasks/sample_data.rake))
 
 - 7-iis-setup
 -- deploy a .NET application on IIS

@@ -1,1 +1,1 @@
-set PATH=%PATH%;%~dp0bin
+set PATH=%~dp0bin;%PATH%
